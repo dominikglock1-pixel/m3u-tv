@@ -18,11 +18,6 @@ M3U TV befindet sich in Entwicklung. Ein öffentlicher Storestart und die Unters
 
 M3U TV stellt keine TV-Sender, Filme, Serien oder Streaming-Abonnements bereit. Du benötigst eine eigene Playlist und die nötigen Nutzungsrechte.
 
-## Kontakt
-
-Projekt: **Dominik Glock**  
-Support: **[dominik.glock1@gmx.de](mailto:dominik.glock1@gmx.de)**
-
 Dieses Repository enthält die Projektbeschreibung und die statische Homepage in `index.html`.
 
 ---
