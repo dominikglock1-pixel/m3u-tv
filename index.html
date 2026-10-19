@@ -1,0 +1,67 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="M3U TV — a simple player for your own playlists. Samsung TV, Android and iOS project information and support.">
+  <meta name="color-scheme" content="dark">
+  <title>M3U TV — Your playlists. Your screen.</title>
+  <style>
+    :root{color-scheme:dark;--background:#101313;--panel:#191e1d;--text:#f4f5f0;--muted:#aab5af;--accent:#d6fa79;--line:#303a34}
+    *{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:var(--background);color:var(--text);font:16px/1.65 system-ui,-apple-system,"Segoe UI",sans-serif}a{color:inherit}button,a{touch-action:manipulation}a:focus-visible,button:focus-visible{outline:3px solid var(--accent);outline-offset:5px}.wrap{width:min(1100px,calc(100% - 48px));margin:auto}header{display:flex;align-items:center;justify-content:space-between;gap:24px;padding:26px 0;border-bottom:1px solid var(--line)}.brand{display:flex;align-items:center;gap:13px;text-decoration:none;font-weight:750;font-size:24px;letter-spacing:-1px}.mark{display:flex;align-items:flex-end;gap:4px;width:31px;height:28px}.mark i{display:block;width:7px;border-radius:3px;background:var(--accent)}.mark i:nth-child(1){height:15px}.mark i:nth-child(2){height:23px}.mark i:nth-child(3){height:28px}.brand span span{font-weight:400;color:var(--accent)}nav{display:flex;align-items:center;gap:24px}nav a{font-size:14px;color:var(--muted);text-decoration:none}.language{font:inherit;font-size:13px;color:var(--text);background:transparent;border:1px solid var(--line);border-radius:8px;padding:7px 11px;cursor:pointer}.hero{padding:94px 0 80px;max-width:880px}.eyebrow{text-transform:uppercase;letter-spacing:2px;font-size:12px;font-weight:750;color:var(--accent)}h1{font-size:clamp(48px,7.3vw,88px);line-height:1.06;letter-spacing:-4px;font-weight:650;margin:23px 0 25px}h1 span{color:var(--accent)}.lead{font-size:21px;color:var(--muted);max-width:680px;line-height:1.55}.hero-link{display:inline-block;margin-top:22px;padding:13px 20px;border-radius:10px;background:var(--accent);color:#172013;text-decoration:none;font-weight:700}.platforms{display:grid;grid-template-columns:1.2fr 1fr;gap:22px}.card{padding:31px;border:1px solid var(--line);border-radius:18px;background:var(--panel)}.card.featured{border-color:#526637;background:linear-gradient(135deg,#222b20,var(--panel))}.badge{display:inline-block;color:var(--accent);font-size:12px;font-weight:750;letter-spacing:1px;text-transform:uppercase}h2{font-size:30px;letter-spacing:-1px;line-height:1.2;margin:15px 0 18px}.card p{margin:0;color:var(--muted)}.features{display:flex;flex-wrap:wrap;gap:8px;margin-top:25px}.features span{font-size:13px;padding:5px 11px;border:1px solid #46503f;border-radius:99px;color:#dce5d6}.details{display:grid;grid-template-columns:1fr 1fr;gap:64px;padding:69px 0;border-bottom:1px solid var(--line)}h3{font-size:19px;margin:0 0 14px}.details p{color:var(--muted);margin:0 0 14px}.contact{padding:46px 0 52px;display:flex;align-items:flex-start;justify-content:space-between;gap:30px}.contact p{margin:0;color:var(--muted)}.contact a{color:var(--accent);text-decoration-thickness:1px;text-underline-offset:4px}.note{max-width:430px;font-size:13px}footer{padding:20px 0;color:#7e8b82;font-size:12px;border-top:1px solid var(--line)}@media(max-width:720px){.wrap{width:calc(100% - 32px)}header{padding:20px 0}nav{gap:14px}nav a{display:none}.hero{padding:63px 0 50px}h1{letter-spacing:-2px}.lead{font-size:18px}.platforms,.details{grid-template-columns:1fr}.card{padding:25px}.details{gap:28px;padding:43px 0}.contact{display:block;padding:35px 0}.note{margin-top:25px!important}h2{font-size:27px}}
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <header>
+      <a class="brand" href="#start" aria-label="M3U TV"><span class="mark" aria-hidden="true"><i></i><i></i><i></i></span><span>M3U <span>TV</span></span></a>
+      <nav aria-label="Navigation"><a href="#platforms" data-en="Platforms" data-de="Plattformen">Platforms</a><a href="#contact" data-en="Contact" data-de="Kontakt">Contact</a><button class="language" type="button" id="language" lang="de" aria-label="Auf Deutsch wechseln">Deutsch</button></nav>
+    </header>
+    <main id="start">
+      <section class="hero">
+        <div class="eyebrow" data-en="A player for your own playlists" data-de="Ein Player für deine eigenen Playlists">A player for your own playlists</div>
+        <h1><span data-en="Your playlists." data-de="Deine Playlists.">Your playlists.</span><br><span data-en="Your screen." data-de="Dein Bildschirm.">Your screen.</span></h1>
+        <p class="lead" data-en="Bring your M3U playlists together. Find a channel, save your favourites and keep watching — with a simple interface for your TV and phone." data-de="Bringe deine M3U-Playlists zusammen. Finde einen Sender, speichere deine Favoriten und schau weiter — mit einer einfachen Oberfläche für Fernseher und Handy.">Bring your M3U playlists together. Find a channel, save your favourites and keep watching — with a simple interface for your TV and phone.</p>
+        <a class="hero-link" href="#platforms" data-en="Explore the project" data-de="Das Projekt kennenlernen">Explore the project</a>
+      </section>
+      <section class="platforms" id="platforms" aria-label="Platforms">
+        <article class="card featured">
+          <div class="badge" data-en="Samsung TV · Fully free" data-de="Samsung TV · Vollständig kostenlos">Samsung TV · Fully free</div>
+          <h2 data-en="All your playlists. No upgrade." data-de="Alle deine Playlists. Ohne Upgrade.">All your playlists. No upgrade.</h2>
+          <p data-en="The Samsung TV version is designed to include multiple playlists, favourites and history for free, without purchases or app advertising." data-de="Die Samsung-TV-Version bietet mehrere Playlists, Favoriten und Verlauf kostenlos — ohne Käufe und ohne App-Werbung.">The Samsung TV version is designed to include multiple playlists, favourites and history for free, without purchases or app advertising.</p>
+          <div class="features"><span data-en="Multiple playlists" data-de="Mehrere Playlists">Multiple playlists</span><span data-en="Favourites" data-de="Favoriten">Favourites</span><span data-en="History" data-de="Verlauf">History</span></div>
+        </article>
+        <article class="card">
+          <div class="badge" data-en="Android & iOS · In development" data-de="Android & iOS · In Entwicklung">Android & iOS · In development</div>
+          <h2 data-en="The same idea. On the go." data-de="Dieselbe Idee. Für unterwegs.">The same idea. On the go.</h2>
+          <p data-en="Mobile versions are in development. A discreet ad in the free home menu and a separate one-time Premium purchase of around €3 per platform are planned. Premium purchases are not active yet." data-de="Die mobilen Versionen sind in Entwicklung. Geplant sind dezente Werbung im kostenlosen Hauptmenü und ein separater Premium-Einmalkauf um 3 € je Plattform. Premiumkäufe sind noch nicht aktiviert.">Mobile versions are in development. A discreet ad in the free home menu and a separate one-time Premium purchase of around €3 per platform are planned. Premium purchases are not active yet.</p>
+        </article>
+      </section>
+      <section class="details">
+        <div><h3 data-en="Add. Find. Watch." data-de="Hinzufügen. Finden. Abspielen.">Add. Find. Watch.</h3><p data-en="Add a playlist using provider details, an HTTP/HTTPS address, a file or pasted text. Search your library, browse groups and switch between TV, movies and series." data-de="Füge eine Playlist über Anbieterzugang, HTTP-/HTTPS-Adresse, Datei oder Text hinzu. Durchsuche deine Sammlung, wähle Gruppen und wechsle zwischen Fernsehen, Filmen und Serien.">Add a playlist using provider details, an HTTP/HTTPS address, a file or pasted text. Search your library, browse groups and switch between TV, movies and series.</p><p data-en="Available content and playback depend on your playlist, media formats and device." data-de="Verfügbare Inhalte und Wiedergabe hängen von deiner Playlist, den Medienformaten und deinem Gerät ab.">Available content and playback depend on your playlist, media formats and device.</p></div>
+        <div><h3 data-en="A project in development" data-de="Ein Projekt in Entwicklung">A project in development</h3><p data-en="Public store availability has not been announced. Samsung TV testing is ongoing; mobile device testing is still ahead. Supported TV model groups will be confirmed before release." data-de="Ein öffentlicher Storestart ist noch nicht angekündigt. Samsung-TV-Tests laufen; mobile Gerätetests stehen noch aus. Unterstützte TV-Modellgruppen werden vor der Veröffentlichung festgelegt.">Public store availability has not been announced. Samsung TV testing is ongoing; mobile device testing is still ahead. Supported TV model groups will be confirmed before release.</p><p data-en="M3U TV does not provide channels, films, series or streaming subscriptions. Use your own playlist and make sure you have the necessary rights." data-de="M3U TV stellt keine Sender, Filme, Serien oder Streaming-Abonnements bereit. Verwende deine eigene Playlist mit den nötigen Nutzungsrechten.">M3U TV does not provide channels, films, series or streaming subscriptions. Use your own playlist and make sure you have the necessary rights.</p></div>
+      </section>
+      <section class="contact" id="contact">
+        <div><h3 data-en="Contact & support" data-de="Kontakt & Support">Contact & support</h3><p>Dominik Glock</p><a href="mailto:dominik.glock1@gmx.de">dominik.glock1@gmx.de</a></div>
+        <p class="note" data-en="Premium is planned separately for each mobile store. No M3U TV account or shared licence across Samsung, Android and iOS is planned." data-de="Premium ist für jeden mobilen Store separat geplant. Ein M3U-TV-Konto oder eine gemeinsame Lizenz für Samsung, Android und iOS ist nicht vorgesehen.">Premium is planned separately for each mobile store. No M3U TV account or shared licence across Samsung, Android and iOS is planned.</p>
+      </section>
+    </main>
+    <footer>M3U TV · <span data-en="Project information" data-de="Projektinformationen">Project information</span></footer>
+  </div>
+  <script>
+    (function () {
+      'use strict';
+      var language = 'en';
+      var button = document.getElementById('language');
+      button.addEventListener('click', function () {
+        language = language === 'en' ? 'de' : 'en';
+        document.documentElement.lang = language;
+        document.querySelectorAll('[data-en][data-de]').forEach(function (element) { element.textContent = element.getAttribute('data-' + language); });
+        button.textContent = language === 'en' ? 'Deutsch' : 'English';
+        button.lang = language === 'en' ? 'de' : 'en';
+        button.setAttribute('aria-label', language === 'en' ? 'Auf Deutsch wechseln' : 'Switch to English');
+      });
+    })();
+  </script>
+</body>
+</html>
